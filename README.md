@@ -1,17 +1,17 @@
-#NOTES:
+# NOTES:
 CUDA code for filterbanking LOFT-e data.
 Original author: Mateusz Malenta
 
-#REQUIREMENTS:
+# REQUIREMENTS:
 CUDA (more info to come)
 C++11
 
-#TO MAKE:
+# TO MAKE:
 ```
 nvcc -o vdifil -std=c++11 vdifil.cu -lcufft
 ```
 
-#TO USE:
+# TO USE:
 ```
 ./vdifil -a <data_pol0> -b <data_pol1> -o <outname.fil> -c <headerfile.dat> -s
 ```
