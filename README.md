@@ -21,6 +21,7 @@ After git cloning this repository, do:
 ```
 >nvcc -o vdifil -std=c++11 vdifil.cu -lcufft
 ```
+to create the `vdifil` executable which may be run with data and headers (see next steps).
 
 # TO MAKE A FILTERBANK HEADER FILE:
 After git cloning this repository and adding it to your python path, do:
