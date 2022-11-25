@@ -15,6 +15,7 @@ Authors: Mateusz Malenta (CUDA code), C. Walker (Python tools)
 - CUDA (more info to come)
 - C++11
 - LOFTe_parseVex: https://github.com/mbcxqcw2/LOFTe_parseVex (and dependencies)
+- baseband: https://github.com/mhvk/baseband (and dependencies)
 
 # USAGE:
 ## 1) TO START:
