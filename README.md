@@ -31,7 +31,7 @@ After git cloning this repository and adding it to your python path, do:
 where `<vdif_file.vdif>` is an e-MERLIN .vdif file, `<vex_file.vex>` is its associated .vex file, and `<header_file.dat>` is the desired name of the output header file. 
 
 # TO SPLIT A VDIF FILE BY POLARISATION:
-Note: this is necessary if both pols were stored in the same .vdif file.
+Note: this is necessary if both pols were stored in the same .vdif file. If polarisations were stored separately, this step may be skipped.
 
 After git cloning this repository and adding it to your python path, do:
 ```
