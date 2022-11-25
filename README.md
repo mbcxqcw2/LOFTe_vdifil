@@ -16,14 +16,15 @@ Authors: Mateusz Malenta (CUDA code), C. Walker (Python tools)
 - C++11
 - LOFTe_parseVex: https://github.com/mbcxqcw2/LOFTe_parseVex (and dependencies)
 
-# TO MAKE THE FILTERBANKER:
+#USAGE:
+## TO MAKE THE FILTERBANKER:
 After git cloning this repository, do:
 ```
 >nvcc -o vdifil -std=c++11 vdifil.cu -lcufft
 ```
 to create the `vdifil` executable which may be run with data and headers (see next steps).
 
-# TO MAKE A FILTERBANK HEADER FILE:
+## TO MAKE A FILTERBANK HEADER FILE:
 After git cloning this repository and adding it to your python path, do:
 ```
 >from LOFTe_vdifil import vdifil_headers as vh
@@ -31,7 +32,7 @@ After git cloning this repository and adding it to your python path, do:
 ```
 where `<vdif_file.vdif>` is the e-MERLIN .vdif file to be filterbanked, `<vex_file.vex>` is its associated .vex file, and `<header_file.dat>` is the desired name of the output header file. 
 
-# TO SPLIT A VDIF FILE BY POLARISATION:
+## TO SPLIT A VDIF FILE BY POLARISATION:
 Note: this required to run the `vdifil` executable if both polarisations were stored in the same .vdif file. If the polarisations were stored in separate files, this step may be skipped.
 
 After git cloning this repository and adding it to your python path, do:
@@ -40,7 +41,7 @@ After git cloning this repository and adding it to your python path, do:
 ```
 where...
 
-# TO USE THE FILTERBANKER:
+## TO USE THE FILTERBANKER:
 split the .vdif file into separate polarisatins `<pol0.vdif>` and `<pol1.vdif>` and then:
 ```
 >./vdifil -a <pol0.vdif> -b <pol1.vdif> -o <outname.fil> -c <header_file.dat> -s
