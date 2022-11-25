@@ -45,7 +45,7 @@ After git cloning this repository and adding it to your python path, one can do:
 where...
 
 ## 5) TO USE THE FILTERBANKER:
-Split the .vdif file to filterbank into separate polarisations `<pol0.vdif>` and `<pol1.vdif>` if necessary. Create `<header_file.dat`. Then do:
+Split the .vdif file to filterbank into separate polarisations `<pol0.vdif>` and `<pol1.vdif>` if necessary. Create `<header_file.dat>`. Then do:
 ```
 >./vdifil -a <pol0.vdif> -b <pol1.vdif> -o <outname.fil> -c <header_file.dat> -s
 ```
