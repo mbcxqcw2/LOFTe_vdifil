@@ -9,9 +9,9 @@ Note: vdifil.cu only takes .vdif observations split into two separate polarisati
 Authors: Mateusz Malenta (CUDA code), C. Walker (Python tools)
 
 # REQUIREMENTS:
-CUDA (more info to come)
-C++11
-LOFTe_parseVex: https://github.com/mbcxqcw2/LOFTe_parseVex (and dependencies)
+-CUDA (more info to come)
+-C++11
+-LOFTe_parseVex: https://github.com/mbcxqcw2/LOFTe_parseVex (and dependencies)
 
 # TO MAKE THE FILTERBANKER:
 ```
@@ -23,7 +23,7 @@ In python:
 ```
 >make_vdifil_header(<vdif_file.vdif>,<vex_file.vex>,<header_file.dat>)
 ```
-where `<vdif_file.vdif>' is an e-MERLIN .vdif file, `<vex_file.vex>` is its associated .vex file, and `<header_file.dat>` is the desired name of the output header file. 
+where `<vdif_file.vdif>` is an e-MERLIN .vdif file, `<vex_file.vex>` is its associated .vex file, and `<header_file.dat>` is the desired name of the output header file. 
 
 
 # TO USE THE FILTERBANKER:
