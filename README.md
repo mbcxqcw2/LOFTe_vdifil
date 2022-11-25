@@ -23,17 +23,21 @@ After git cloning this repository, do:
 ```
 
 # TO MAKE A FILTERBANK HEADER FILE:
-After git cloning this repository and adding it to your pythonpath, do:
+After git cloning this repository and adding it to your python path, do:
 ```
 >from LOFTe_vdifil import vdifil_headers as vh
 >vh.make_vdifil_header(<vdif_file.vdif>,<vex_file.vex>,<header_file.dat>)
 ```
 where `<vdif_file.vdif>` is an e-MERLIN .vdif file, `<vex_file.vex>` is its associated .vex file, and `<header_file.dat>` is the desired name of the output header file. 
 
-# TO SPLIT A VDIF FILE BY POLARISATION
-(necessary if both pols were stored in the same file)
+# TO SPLIT A VDIF FILE BY POLARISATION:
+Note: this is necessary if both pols were stored in the same .vdif file.
 
-TBC
+After git cloning this repository and adding it to your python path, do:
+```
+>TBC
+```
+where...
 
 # TO USE THE FILTERBANKER:
 split the .vdif file into separate polarisatins `<pol0.vdif>` and `<pol1.vdif>` and then:
