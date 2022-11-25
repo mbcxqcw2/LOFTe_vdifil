@@ -47,7 +47,14 @@ def make_vdifil_header(vdif_file,vex_file,outfilename):
     NOCHANS = 256
     NOIFS = 1
     TELESCOPEID = 82
-    
+
+    #######################################################
+    #get scan number and scan telescope from vdif filename#
+    #######################################################
+
+    scan_number = #need to do
+    scan_tel = #need to do
+
     ###############################
     #read first frame of vdif data#
     ###############################

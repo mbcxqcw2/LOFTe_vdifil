@@ -1,4 +1,7 @@
 # NOTES:
+
+WILL CURRENTLY CRASH! make_vdifil_header() needs to be updated to extract the scan number and scan telescope information from the .vdif filename.
+
 Code for filterbanking LOFT-e data.
 
 Filterbanks are made using vdifil.cu.
