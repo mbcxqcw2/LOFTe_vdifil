@@ -19,9 +19,10 @@ Authors: Mateusz Malenta (CUDA code), C. Walker (Python tools)
 ```
 
 # TO MAKE A FILTERBANK HEADER FILE:
-In python:
+After git cloning this directory and adding it to your pythonpath, do:
 ```
->make_vdifil_header(<vdif_file.vdif>,<vex_file.vex>,<header_file.dat>)
+>from LOFTe_vdifil import vdifil_headers as vh
+>vh.make_vdifil_header(<vdif_file.vdif>,<vex_file.vex>,<header_file.dat>)
 ```
 where `<vdif_file.vdif>` is an e-MERLIN .vdif file, `<vex_file.vex>` is its associated .vex file, and `<header_file.dat>` is the desired name of the output header file. 
 
