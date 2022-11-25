@@ -16,7 +16,7 @@ Authors: Mateusz Malenta (CUDA code), C. Walker (Python tools)
 - C++11
 - LOFTe_parseVex: https://github.com/mbcxqcw2/LOFTe_parseVex (and dependencies)
 
-#USAGE:
+# USAGE:
 ## TO MAKE THE FILTERBANKER:
 After git cloning this repository, do:
 ```
