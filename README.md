@@ -17,18 +17,23 @@ Authors: Mateusz Malenta (CUDA code), C. Walker (Python tools)
 - LOFTe_parseVex: https://github.com/mbcxqcw2/LOFTe_parseVex (and dependencies)
 
 # TO MAKE THE FILTERBANKER:
+After git cloning this repository, do:
 ```
 >nvcc -o vdifil -std=c++11 vdifil.cu -lcufft
 ```
 
 # TO MAKE A FILTERBANK HEADER FILE:
-After git cloning this directory and adding it to your pythonpath, do:
+After git cloning this repository and adding it to your pythonpath, do:
 ```
 >from LOFTe_vdifil import vdifil_headers as vh
 >vh.make_vdifil_header(<vdif_file.vdif>,<vex_file.vex>,<header_file.dat>)
 ```
 where `<vdif_file.vdif>` is an e-MERLIN .vdif file, `<vex_file.vex>` is its associated .vex file, and `<header_file.dat>` is the desired name of the output header file. 
 
+# TO SPLIT A VDIF FILE BY POLARISATION
+(necessary if both pols were stored in the same file)
+
+TBC
 
 # TO USE THE FILTERBANKER:
 split the .vdif file into separate polarisatins `<pol0.vdif>` and `<pol1.vdif>` and then:
