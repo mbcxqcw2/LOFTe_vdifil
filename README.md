@@ -9,9 +9,9 @@ Note: vdifil.cu only takes .vdif observations split into two separate polarisati
 Authors: Mateusz Malenta (CUDA code), C. Walker (Python tools)
 
 # REQUIREMENTS:
--CUDA (more info to come)
--C++11
--LOFTe_parseVex: https://github.com/mbcxqcw2/LOFTe_parseVex (and dependencies)
+- CUDA (more info to come)
+- C++11
+- LOFTe_parseVex: https://github.com/mbcxqcw2/LOFTe_parseVex (and dependencies)
 
 # TO MAKE THE FILTERBANKER:
 ```
