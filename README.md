@@ -32,7 +32,7 @@ After git cloning this repository and adding it to your python path, do:
 where `<vdif_file.vdif>` is the e-MERLIN .vdif file to be filterbanked, `<vex_file.vex>` is its associated .vex file, and `<header_file.dat>` is the desired name of the output header file. 
 
 # TO SPLIT A VDIF FILE BY POLARISATION:
-Note: this is necessary if both pols were stored in the same .vdif file. If polarisations were stored separately, this step may be skipped.
+Note: this required to run the `vdifil` executable if both polarisations were stored in the same .vdif file. If the polarisations were stored in separate files, this step may be skipped.
 
 After git cloning this repository and adding it to your python path, do:
 ```
