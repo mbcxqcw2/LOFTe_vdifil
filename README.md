@@ -5,7 +5,7 @@ Code for filterbanking LOFT-e data.
 Filterbanks are made using vdifil.cu.
 Requires header files which may be created using vdifil_headers.py. 
 
-Note: vdifil.cu only takes .vdif observations split into two separate polarisation files. If the two polarisations are stored in a single file, then these must be split up (using, e.g., baseband). 
+Note: vdifil.cu only takes .vdif observations split into two separate polarisation files. If the two polarisations are stored in a single file, then these must be split up (see Step 4). 
 
 Authors: Mateusz Malenta (CUDA code), C. Walker (Python tools)
 
@@ -46,7 +46,7 @@ After git cloning this repository and adding it to your python path, one can do:
 >import vdifil_splitter as vs
 >vs.split_vdif_file(<vdif_file.vdif>)
 ```
-where `<vdif_file.vdif>` is the original dual-polarisation .vdif file. The resulting single-pol .vdif files will be output in the same directory as the original input file, and have the names `<vdif_file_pol0,vdif>` and `<vdif_file_pol1.vdif>`.
+where `<vdif_file.vdif>` is the original dual-polarisation .vdif file. The resulting single-pol .vdif files will be output in the same directory as the original input file, and have the names `<vdif_file_pol0.vdif>` and `<vdif_file_pol1.vdif>`.
 
 ## 5) TO USE THE FILTERBANKER:
 Split the .vdif file to filterbank into separate polarisations `<pol0.vdif>` and `<pol1.vdif>` if necessary. Create `<header_file.dat>`. Then do:
