@@ -33,7 +33,7 @@ to create the `vdifil` executable which may be run with data and headers (see ne
 ## 3) TO MAKE FILTERBANK HEADER FILES:
 After git cloning this repository and adding it to your python path, one can do:
 ```
->from LOFTe_vdifil import vdifil_headers as vh
+>import vdifil_headers as vh
 >vh.make_vdifil_header(<vdif_file.vdif>,<vex_file.vex>,<header_file.dat>)
 ```
 where `<vdif_file.vdif>` is the e-MERLIN .vdif file to be filterbanked, `<vex_file.vex>` is its associated .vex file, and `<header_file.dat>` is the desired name of the output header file. 
