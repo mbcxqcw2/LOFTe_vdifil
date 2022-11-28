@@ -43,9 +43,10 @@ Note: this step is required to run the `vdifil` executable if both polarisations
 
 After git cloning this repository and adding it to your python path, one can do:
 ```
->TBC
+>import vdifil_splitter as vs
+>vs.split_vdif_file(<vdif_file.vdif>)
 ```
-where...
+where `<vdif_file.vdif>` is the original dual-polarisation .vdif file. The resulting single-pol .vdif files will be output in the same directory as the original input file, and have the names `<vdif_file_pol0,vdif>` and `<vdif_file_pol1.vdif>`.
 
 ## 5) TO USE THE FILTERBANKER:
 Split the .vdif file to filterbank into separate polarisations `<pol0.vdif>` and `<pol1.vdif>` if necessary. Create `<header_file.dat>`. Then do:
