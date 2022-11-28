@@ -23,6 +23,24 @@ def make_vdifil_header(vdif_file,vex_file,outfilename):
     RETURNS:
     
     a header file stored at outfilename for use with LOFTe_vdifil
+
+    NOTES:
+
+    This function assumes that the filename of the .vdif file takes the format:
+
+    <location>/<cycle number>_<telescope id>_<scan number>.vdif
+
+    where <location> is the location of the file, <cycle number> is of
+    the format "cyXXXX" where "XXXX" are integers referring to the proposal
+    cycle of the observation (e.g. "13002"); <telescope id> is the id of
+    the telescope which performed the observation (e.g. "jm" for the mark-II);
+    and <scan number> is of the format "noXXXX", where "XXXX" is a four-digit
+    number, e.g. 0001. An overall example filename would therefore be:
+
+     cy13002_jm_no0001.vdif
+
+    If this convention is not kept, scan_number and scan_tel within the
+    function may be interpreted inaccurately.
     
     """
     
@@ -52,8 +70,8 @@ def make_vdifil_header(vdif_file,vex_file,outfilename):
     #get scan number and scan telescope from vdif filename#
     #######################################################
 
-    scan_number = #need to do
-    scan_tel = #need to do
+    scan_number = vdif_file.split('/')[-1].split('_no')[-1].split('.vdif')[0] #extract the observation scan number (see function help for more)
+    scan_tel = vdif_file.split('/')[-1].split('_no')[0].split('_')[-1] #extract the telescope id for the observation (see function help for more)
 
     ###############################
     #read first frame of vdif data#
